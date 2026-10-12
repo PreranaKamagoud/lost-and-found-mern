@@ -1,0 +1,121 @@
+.report-found-page {
+  min-height: 100vh;
+  background: #f4f4f2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 20px;
+  box-sizing: border-box;
+}
+
+.report-found-box {
+  width: 100%;
+  max-width: 520px;
+  background: #ffffff;
+  padding: 36px 40px;
+  border: 1px solid #e2e2e2;
+  border-radius: 14px;
+  box-shadow: 0 10px 35px rgba(0, 0, 0, 0.07);
+  box-sizing: border-box;
+}
+
+.report-found-box h1 {
+  margin: 0;
+  text-align: center;
+  font-size: 26px;
+  font-weight: 650;
+  color: #202020;
+}
+
+.report-found-subtitle {
+  margin: 8px 0 28px;
+  text-align: center;
+  color: #777;
+  font-size: 14px;
+}
+
+.report-found-box form {
+  display: flex;
+  flex-direction: column;
+}
+
+.report-found-box label {
+  margin-bottom: 7px;
+  font-size: 13px;
+  font-weight: 600;
+  color: #333;
+}
+
+.report-found-box input,
+.report-found-box select,
+.report-found-box textarea {
+  width: 100%;
+  box-sizing: border-box;
+  border: 1px solid #d4d4d4;
+  border-radius: 7px;
+  background: #fafafa;
+  color: #222;
+  font-family: inherit;
+  font-size: 14px;
+  outline: none;
+}
+
+.report-found-box input,
+.report-found-box select {
+  height: 43px;
+  padding: 0 12px;
+  margin-bottom: 18px;
+}
+
+.report-found-box textarea {
+  padding: 11px 12px;
+  margin-bottom: 18px;
+  resize: vertical;
+  min-height: 90px;
+}
+
+.report-found-box input:focus,
+.report-found-box select:focus,
+.report-found-box textarea:focus {
+  border-color: #555;
+  background: #ffffff;
+  box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.05);
+}
+
+.report-found-box input::placeholder,
+.report-found-box textarea::placeholder {
+  color: #999;
+}
+
+.report-found-box button {
+  width: 100%;
+  height: 44px;
+  margin-top: 5px;
+  border: none;
+  border-radius: 7px;
+  background: #292929;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.report-found-box button:hover {
+  background: #111111;
+  transform: translateY(-1px);
+}
+
+@media (max-width: 600px) {
+  .report-found-page {
+    padding: 25px 15px;
+  }
+
+  .report-found-box {
+    padding: 28px 22px;
+  }
+
+  .report-found-box h1 {
+    font-size: 23px;
+  }
+}

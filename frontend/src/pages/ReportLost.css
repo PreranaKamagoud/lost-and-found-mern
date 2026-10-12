@@ -1,0 +1,123 @@
+.report-lost-page {
+  min-height: 100vh;
+  background: #f4f4f2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 20px;
+}
+
+.report-lost-box {
+  width: 100%;
+  max-width: 520px;
+  background: #ffffff;
+  padding: 36px 40px;
+  border: 1px solid #e2e2e2;
+  border-radius: 12px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.06);
+}
+
+.report-lost-box h1 {
+  margin: 0;
+  text-align: center;
+  font-size: 26px;
+  font-weight: 650;
+  color: #1f1f1f;
+}
+
+.report-lost-subtitle {
+  margin: 8px 0 28px;
+  text-align: center;
+  color: #777;
+  font-size: 14px;
+}
+
+.report-lost-box form {
+  display: flex;
+  flex-direction: column;
+}
+
+.report-lost-box label {
+  margin-bottom: 7px;
+  font-size: 13px;
+  font-weight: 600;
+  color: #333;
+}
+
+.report-lost-box input,
+.report-lost-box select,
+.report-lost-box textarea {
+  width: 100%;
+  box-sizing: border-box;
+  border: 1px solid #d4d4d4;
+  border-radius: 7px;
+  background: #fafafa;
+  color: #222;
+  font-family: inherit;
+  font-size: 14px;
+  outline: none;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.report-lost-box input,
+.report-lost-box select {
+  height: 43px;
+  padding: 0 12px;
+  margin-bottom: 18px;
+}
+
+.report-lost-box textarea {
+  padding: 11px 12px;
+  margin-bottom: 18px;
+  resize: vertical;
+  min-height: 90px;
+}
+
+.report-lost-box input:focus,
+.report-lost-box select:focus,
+.report-lost-box textarea:focus {
+  border-color: #555;
+  background: #ffffff;
+  box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.05);
+}
+
+.report-lost-box input::placeholder,
+.report-lost-box textarea::placeholder {
+  color: #999;
+}
+
+.report-lost-box button {
+  height: 44px;
+  margin-top: 5px;
+  border: none;
+  border-radius: 7px;
+  background: #292929;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s, transform 0.2s;
+}
+
+.report-lost-box button:hover {
+  background: #111111;
+  transform: translateY(-1px);
+}
+
+.report-lost-box button:active {
+  transform: translateY(0);
+}
+
+@media (max-width: 600px) {
+  .report-lost-page {
+    padding: 25px 15px;
+  }
+
+  .report-lost-box {
+    padding: 28px 22px;
+  }
+
+  .report-lost-box h1 {
+    font-size: 23px;
+  }
+}

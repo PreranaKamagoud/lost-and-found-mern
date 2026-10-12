@@ -1,0 +1,155 @@
+.item-details-page {
+  min-height: 100vh;
+  background: #f4f4f2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 20px;
+  box-sizing: border-box;
+}
+
+.details-box {
+  width: 100%;
+  max-width: 650px;
+  background: #ffffff;
+  border: 1px solid #e2e2e2;
+  border-radius: 14px;
+  padding: 40px;
+  box-sizing: border-box;
+  box-shadow: 0 10px 35px rgba(0, 0, 0, 0.07);
+}
+
+.details-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 24px;
+}
+
+.details-status {
+  display: inline-flex;
+  align-items: center;
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+
+.details-status.lost {
+  background: #f3e7e7;
+  color: #8b2f2f;
+}
+
+.details-status.found {
+  background: #e7f0e8;
+  color: #35633b;
+}
+
+.details-category {
+  font-size: 13px;
+  color: #777;
+  background: #f5f5f5;
+  padding: 6px 12px;
+  border-radius: 20px;
+}
+
+.details-box h1 {
+  margin: 0 0 12px;
+  font-size: 30px;
+  font-weight: 650;
+  color: #202020;
+}
+
+.details-description {
+  margin: 0 0 30px;
+  font-size: 15px;
+  line-height: 1.7;
+  color: #666;
+}
+
+.details-info {
+  border-top: 1px solid #e8e8e8;
+  border-bottom: 1px solid #e8e8e8;
+  margin-bottom: 28px;
+}
+
+.detail-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+  padding: 17px 0;
+  border-bottom: 1px solid #eeeeee;
+}
+
+.detail-row:last-child {
+  border-bottom: none;
+}
+
+.detail-row strong {
+  font-size: 13px;
+  color: #444;
+}
+
+.detail-row span {
+  font-size: 14px;
+  color: #666;
+  text-align: right;
+}
+
+.details-actions {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.back-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 150px;
+  height: 42px;
+  padding: 0 20px;
+  box-sizing: border-box;
+  background: #292929;
+  color: #ffffff;
+  text-decoration: none;
+  border-radius: 7px;
+  font-size: 13px;
+  font-weight: 600;
+  transition: background 0.2s, transform 0.2s;
+}
+
+.back-button:hover {
+  background: #111111;
+  transform: translateY(-1px);
+}
+
+.details-message {
+  font-size: 15px;
+  color: #666;
+}
+
+@media (max-width: 600px) {
+  .item-details-page {
+    padding: 25px 15px;
+  }
+
+  .details-box {
+    padding: 28px 22px;
+  }
+
+  .details-box h1 {
+    font-size: 25px;
+  }
+
+  .detail-row {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  .detail-row span {
+    text-align: left;
+  }
+}
